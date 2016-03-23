@@ -58,6 +58,8 @@ $ git merge branchname_you_worked_on_for_a_fix
 --delete a branch
 $ git branch -d hotfix
 
+-- new version for testing
+
 
 
 
