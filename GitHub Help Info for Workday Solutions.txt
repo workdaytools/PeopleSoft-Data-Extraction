@@ -1,0 +1,65 @@
+workdaytools / Workday1!
+
+--  20-Dec-2015 -- GitHub help
+
+http://git-scm.com/doc
+https://forum.lowyat.net/topic/1358320/all
+https://webdeveloperankitakulkarni.wordpress.com/2013/10/19/git-with-notepad/
+
+-- List git configuration
+git config --list
+
+-- Config Notepad++ 
+git config --global core.editor "'C:\Program Files (x86)\Notepad++\notepad++.exe' -multiInst"
+
+-- git help
+$ git help config
+
+-- check the status of files
+$ git status
+
+-- tracking new files / stage files
+$ git add full_path/filename.ext or full_path/directory
+
+Note: If you modify a file after you run git add, you have
+to run git add again to stage the latest version of the file
+
+-- find what was changed in file
+$ git diff
+
+-- git commit
+$ git add *.c
+$ git add LICENSE
+$ git commit -m 'initial project version'
+
+-- To remove a file from Git
+rm filename
+
+Note: removes the file from your working directory so
+you don’t see it as an untracked file the next time around. The next time you commit, the file will be gone and no longer tracked
+
+-- To rename a file
+$ git mv oldfilename.ext newfilename.ext
+
+-- Viewing the Commit History
+$ git log
+
+-- Create a new branch and switch to it.
+$ git checkout -b branchname
+Switched to a new branch "branchname"
+OR 
+$ git branch iss53
+$ git checkout iss53
+
+--Merging
+$ git checkout master
+$ git merge branchname_you_worked_on_for_a_fix
+
+--delete a branch
+$ git branch -d hotfix
+
+
+
+
+
+
